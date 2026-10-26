@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agile Methodologies</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+            color: #1f2937;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0f172a;
+            margin-bottom: 30px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+            border-left: 6px solid #2563eb;
+        }
+        
+        .card:nth-child(2) {
+            border-left-color: #10b981;
+        }
+        
+        .card:nth-child(3) {
+            border-left-color: #f59e0b;
+        }
+        
+        h2 {
+            margin-top: 0;
+            color: #111827;
+        }
+        
+        ul {
+            padding-left: 18px;
+            line-height: 1.8;
+        }
+        
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 20px;
+            padding: 6px 10px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Agile Methodologies</h1>
+
+        <div class="grid">
+            <div class="card">
+                <div class="badge">Scrum</div>
+                <h2>Scrum</h2>
+                <ul>
+                    <li>Team works in short sprints.</li>
+                    <li>Product backlog is prioritized.</li>
+                    <li>Daily stand-up meetings track progress.</li>
+                    <li>Example: login page, payment module, dashboard.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="badge">Kanban</div>
+                <h2>Kanban</h2>
+                <ul>
+                    <li>Work is visualized on a board.</li>
+                    <li>Tasks move from To Do to Done.</li>
+                    <li>Helps limit work in progress.</li>
+                    <li>Example: design, coding, review, testing.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="badge">XP</div>
+                <h2>Extreme Programming</h2>
+                <ul>
+                    <li>Focus on coding and testing together.</li>
+                    <li>Pair programming improves quality.</li>
+                    <li>Continuous integration keeps the project stable.</li>
+                    <li>Example: write tests, code, and refactor quickly.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
